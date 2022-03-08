@@ -1,6 +1,42 @@
 
-
+body{
+    height: 40h;
+    font-size: calc(10px + 1vw);
+    line-height: calc(1.1em +0.5vw);
+    display: grid;
+    grid-template-areas: 'header header'
+    'nav main'
+    'footer footer';
+    grid-template-columns: minmax(auto, 12em) 5fr;
+    grid-template-rows: auto 1fr auto;
+}
 table, th,td{
     border: 2px solid rgb(129, 108, 108);
     border-radius: 1px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav{
+    border-right: 1px solid rgb(187, 166, 166);
+    overflow-y: auto;
+    padding: 1rem;
+    grid-area: nav;
+}
+
+table{
+    grid-area:main;
+    margin-left:10px;
+}
+
+h1{
+    grid-area:header;
+    
+}
+
+caption{
+    grid-area:header;
 }
