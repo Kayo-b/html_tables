@@ -1,5 +1,7 @@
 
 body{
+    text-shadow: 1px 1px 2px rgb(179, 37, 179) ;
+    font-family: 'Roboto', sans-serif;
     height: 40h;
     font-size: calc(10px + 1vw);
     line-height: calc(1.1em +0.5vw);
@@ -13,6 +15,7 @@ body{
 table, th,td{
     border: 2px solid rgb(129, 108, 108);
     border-radius: 1px;
+    /* box-shadow: 1px 1px 1px rgb(43, 168, 70); */
 
 }
 
@@ -39,4 +42,22 @@ h1{
 
 caption{
     grid-area:header;
+}
+
+li::marker{
+    content: "◇";
+
+}
+
+li {
+    line-height: 40px;
+    color: blueviolet;
+}
+
+a {
+    color: white
+}
+
+a:hover{
+    color:blueviolet
 }
